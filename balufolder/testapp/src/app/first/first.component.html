@@ -1,0 +1,92 @@
+<p>first works!</p>
+<!-- <button (click)="postapi()">Click</button>
+{{date}} -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- <form [formGroup]="lform" (ngSubmit)="loginworks()">
+    <label>Username:</label>
+    <input type="text" id="username" formControlName="username">
+    <br>
+    <br>
+    <label>Password:</label>
+    <input type="password" id="password" formControlName="password">
+    <br>
+    <br>
+    <button type="submit">Submit</button>
+</form> -->
+
+<!-- <form #loginForm="ngForm" (ngSubmit)="onsubmit(loginForm.value)"> -->
+<!-- <form #loginForm="ngForm"> -->
+    <!-- <label>Useremail:</label>
+    <input type="text" name="username" ngModel>
+    <br>
+    <br>
+    <label>password:</label>
+    <input type="password" name="password" ngModel>
+    <br>
+    <br>
+    <button type="submit" (click)="onsubmit(loginForm.value)">submit</button> -->
+
+    <!-- <input type="text" #firstdiv placeholder="Enter Name">
+    <button (click)="onsubmit(firstdiv)">Submit</button> -->
+
+
+    <h1>{{mytitle}}</h1>
+
+    <button type="button" (click)="add()">Click</button>
+
+    <form #form="ngForm">
+        <div>
+          <label>First Field:</label>
+          <input type="number" name="firstField" [(ngModel)]="firstField" required>
+        </div>
+        <div>
+          <label>Second Field:</label>
+          <input type="number" name="secondField" [(ngModel)]="secondField" required (blur)="validateSecondField()">
+        </div>
+        <div *ngIf="errorMessage">
+          <p style="color: red;">{{errorMessage}}</p>
+        </div>
+        <button [disabled]="form.invalid || errorMessage">Submit</button>
+
+        </form>
+
+    <!-- <table>
+        <tr>
+            <th>Username</th>
+        </tr>
+        <tr *ngFor="let i of userList">
+            <td>{{ i }}</td>
+        </tr>
+    </table> -->
+
+<!-- </form> -->
+</body>
+</html>
+
+
+<!-- <table>
+    <tbody>
+    <tr>
+        <th>S.No</th>
+        <th>Title</th>
+        <th>Body</th>
+    </tr>
+    <tr *ngFor="let ele of arrdata">
+        <td>{{ele.id}}</td>
+        <td>{{ele.title}}</td>
+        <td>{{ele.body}}</td>
+    </tr>
+</tbody>
+</table> -->
+
+
+
